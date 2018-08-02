@@ -191,10 +191,33 @@
 				</a>
 				</section>
 				<section>
+					<section>
+						<h1>Dark Orbits</h1>
+						<small> viz: <a href="http://viz.emaildefense.proofpoint.com/dark_orbits/">viz.emaildefense.proofpoint.com/dark_orbits</a></small><br>
+						<small> scrollytelling tool: <a href="">https://github.com/russellgoldenberg/scrollama</a>scrollama</small><br>
+					</section>
+					<section>
+						<pre><code class="hljs" data-trim contenteditable>
+							iDispatch.on("step-change", function(i){
+				        step = i;
+				        stateFunc.data.step = step;
+				        var stepName = stepHandler["step"+ step].name ;
+				        //console.log(stepName)
+				        stepHandler["step"+ step]()
+				        stateFunc.data.dispatch.call("update-legend",this,step)
+				      })
+						</code></pre>
+					</section>
+				</section>
+				<section>
+
+				</section>
+				<section>
 					<h1>The End</h1>
 					<small> slides: <a href="http://blehman.github.io/d3js_coffee_talk">blehman.github.io/d3js_coffee_talk</a></small><br>
 					<small> contact: <a href="https://twitter.com/BrianLehman" target="_blank">@BrianLehman</a> </small>
 				</section>
+
 			</div>
 
 		</div>
